@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script type="text/javascript">
+    window.onload = function(){
+    let cur = new Date();
+    let year = cur.getFullYear();
+    let month = cur.getMonth();
+    let day = cur.getDate();
+    let hours = ('0' + cur.getHours()).slice(-2); // 시
+    let minutes = ('0' + cur.getMinutes()).slice(-2);  // 분
+    let seconds = ('0' + cur.getSeconds()).slice(-2);  // 초
+    document.getElementById('current').value = year + '-' + month + '-' + day + ' ' + hours + ':' + minutes + ':' + seconds;
+    
+
+    }
+
+</script>
+<body>
+    <div class="logo_container">
+        <div class="container d-flex align-items-center justify-content-center">                
+            <a href="index.html"><span>Maxi-PP</span></a>
+        </div>
+    </div>
+    <div class="menu_content">
+        <ul class="menu">
+            <li>
+                <a href="project.html">프로젝트</a>
+                <ul class="submenu">
+                    <li><a href="project.html">전체</a></li>
+                    <li><a href="#">진행중</a></li>
+                    <li><a href="#">완료</a></li>
+                    <li><a href="#">요약</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="calendar.html">일정관리</a>
+                <ul class="submenu">
+                    <li><a href="calendar.html">나의 일정</a></li>
+                    <li><a href="#">공유한 일정</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="border.html">게시판</a>
+            </li>
+            <li>
+                <a href="center.html">공지사항</a>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <div>
+            <ul class="tab_project">
+                <li>전체</li>
+                <li>진행중</li>
+                <li>완료</li>
+                <li>요약</li>
+            </ul>
+        </div>
+    </div>
+
+        <div>
+            <div style="clear: both;"></div>
+
+        </div>
+        <div class="pro_1">
+            <select>
+                <option value="">진행중</option>
+                <option value="">완료</option>
+            </select>
+            <input placeholder="제목을 입력해주세요.">
+            <textarea></textarea>
+            <input id="current" value="">
+            <input type="button" value="입력">
+        </div>
+
+        <div class="pro_2">
+            <div><select>
+                <option value="">진행중</option>
+                <option value="">완료</option>
+            </select></div>
+            <div>2.진행중인 테스트 제목입니다.</div>
+            <div>2.진행중인 테스트 내용입니다.</div>
+            <div>2022-10-18<br>14:08:34</div>
+            <input type="button" value="수정">
+        </div>
+        <div class="pro_3">
+            <div><select>
+                <option value="">완료</option>
+                <option value="">진행중</option>
+            </select></div>
+            <div>완료된 테스트 제목입니다.</div>
+            <div>완료된 테스트 내용입니다.</div>
+            <div>2022-10-18<br>14:06:41</div>
+            <input type="button" value="수정">
+        </div>
+        <div class="pro_2">
+            <div><select>
+                <option value="">진행중</option>
+                <option value="">완료</option>
+            </select></div>
+            <div>1.진행중인 테스트 제목입니다.</div>
+            <div>1.진행중인 테스트 내용입니다.</div>
+            <div>2022-10-18<br>12:35:51</div>
+            <input type="button" value="수정">
+        </div>
+    </div>
+</body>
+</html>
