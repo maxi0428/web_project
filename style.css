@@ -14,7 +14,7 @@
     float: left;
     text-align: center;
     line-height: 40px;
-    background-color: #a1b4ff;
+    background-color: #2c355c;
   }
   
   .menu a {
@@ -23,7 +23,7 @@
   
   .submenu > li {
     line-height: 50px;
-    background-color: #94a9ff;
+    background-color: #2c355c;
   }
   
   .submenu {
@@ -31,7 +31,7 @@
     overflow: hidden;
   }
   .menu > li:hover {
-    background-color: #94a9ff;
+    background-color: #2c355c;
     transition-duration: 0.5s;
   }
   
@@ -128,13 +128,13 @@ body{ background-color: #ededed; }
 .tab_project > li{
     float: left;
     margin-top: 30px;
-    background: #3498DB;
+    background: #6ebbee;
     padding: 10px;
 }
 
 .pro_1{
     height: 100px;
-    background-color: #e7f56c;
+    background-color: #18a10b;
     text-align: center;
     
 }
@@ -156,7 +156,7 @@ body{ background-color: #ededed; }
 }
 .pro_2{
     height: 100px;
-    background-color: #e7f56c;
+    background-color: #7bac77;
     text-align: center;
 }
 .pro_2 select{
