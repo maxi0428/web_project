@@ -8,9 +8,6 @@
     <title>maxi-pp</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="test.js"></script>
 
 </head>
 <body>
@@ -54,19 +51,25 @@
       <br>
       <br>
 
-      <div class="banner-container">
-        <div class="banner">
-          <div data-index=1>Maxi-PP 페이지입니다.</div>
-          <div data-index=2>로그인을 하세요.</div>
-          <div data-index=3>회원이 아닐경우 회원가입하세요.</div>
-          <div data-index=4>테스트 페이지입니다.</div>
-        </div>
-      </div>
-      <div class="list-button">
-        <span class="list-button-item active"></span> 
-        <span class="list-button-item"></span> 
-        <span class="list-button-item"></span> 
-        <span class="list-button-item"></span> 
+      
+      <div class="loginbox">
+     <h2>로 그 인</h2>
+        <form action="#">
+          <!--작성하지 않아도 문제는 없음-->
+          <fieldset>
+            <legend>로그인 구역</legend>
+            <label for="loginid">아이디</label>
+            <input type="text" id="loginid" placeholder="아이디를 입력해 주세요">
+            <label for="loginpw">비밀번호</label>
+            <input type="password" id="loginpw" placeholder="비밀번호를 입력해 주세요">
+            <ul>
+              <li><a href="#">아이디/비밀번호찾기</a></li>
+              <li><a href="singup.html" onclick="window.open(this.href,'회원가입창','width=800, height=800'); return false;">회원가입</a></li>
+            </ul>
+            <!--데이터를 서버로 전송-->
+            <button type="submit">로그인</button>
+          </fieldset>
+        </form>
       </div>
 </body>
 </html>
