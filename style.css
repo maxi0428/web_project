@@ -327,7 +327,7 @@ tr td:nth-child(2){
 
     align-items: center;
 
-    margin-top:20px;
+    margin-top:50px;
 
 }
 
@@ -472,4 +472,9 @@ tr td:nth-child(2){
     75% {margin-left: -200%}
     95% {margin-left: -200%}
     100% {margin-left: -300%}
+  }
+
+  .w_button input {
+    margin-right: 0;
+    float: right;
   }

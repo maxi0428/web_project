@@ -5,6 +5,7 @@ $(document).ready(function(){
   interval = setInterval(changeActiveIndex,2500);
 	$('.list-button-item').on('click',function(){
   	// list button의 색상 변경
+    
     const index = $(this).index();
     activeIndex = index;
     changeActiveIndex();
